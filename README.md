@@ -1,9 +1,9 @@
-DashBox - Simple development framework for [Dash](https://www.dash.org) [Platform](https://www.dashdevs.org)
+DashBox - Simple development framework for [Dash](https://www.dash.org) [Platform](https://www.dashdevs.org). Making developers life easier.
 
 
 ### Features
 
-- Load Boilerplates, Examples and Tutorials for different use cases and knowledge level
+- Load Boilerplates, Examples and Tutorials for different use cases and knowledge levels
 - Automated software testing with Mocha and Chai
 - Configurable build pipeline and build processes
 - Scriptable deployment and migrations framework
