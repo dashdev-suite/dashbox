@@ -1,0 +1,62 @@
+DashBox - Simple development framework for [Dash](https://www.dash.org) [Platform](https://www.dashdevs.org)
+
+
+### Features
+
+- Load Boilerplates, Examples and Tutorials for different use cases and knowledge level
+- Automated software testing with Mocha and Chai
+- Configurable build pipeline and build processes
+- Scriptable deployment and migrations framework
+
+### Install
+
+```
+$ npm install -g dashbox
+``` 
+
+### Usage
+
+For a default boilerplate-set of contracts, tests and migrations run the following command inside an empty project directory:
+
+```
+$ dashbox init
+``` 
+For a custom boilerplate/example/tutorial run:
+
+```
+$ mkdir project && cd project
+$ dashbox load <source-box>
+```
+eg.
+
+```
+$ dashbox load dashjs-html-js-example
+$ dashbox load chrome-extension
+$ dashbox load chrome-extension-example
+$ dashbox load chrome-extension-wallet-tutorial (WIP)
+``` 
+
+View all available boxes on https://github.com/dashdev-box/
+
+Further Options:
+```
+Usage: dashbox command [parameter]
+
+Options:
+  -h, --help       output usage information
+
+Commands:
+  init|i           Load default Boilerplate-box into current directory
+  load|l <source>  Load defined Boilerplate-box from https://github.com/dashdev-box/ into current directory
+```
+
+### Documentation
+
+No documentation yet. 
+
+Visit https://www.dashdevs.org for updates
+
+
+### License
+
+MIT 
