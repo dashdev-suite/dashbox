@@ -1,6 +1,6 @@
 {
   "name": "dashbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "deprecated": false,
   "description": "DashBox - Simple development framework for Dash Platform",
   "homepage": "https://github.com/dashdev-suite/dashbox",
