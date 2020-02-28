@@ -12,14 +12,14 @@ commander
 commander
   .command("init")
   .alias("i")
-  .description("Load default Boilerplate-box into current directory")
+  .description("Load default Template-box (bare-box) into current directory")
   .action(function () {
-    loadBox("dashbox-init-default");
+    loadBox("bare-box");
   });
 commander
   .command("load <source>")
   .alias("l")
-  .description("Load defined Boilerplate-box from https://github.com/dashdev-box/ into current directory")
+  .description("Load custom Template-box from https://github.com/dashdev-box/ into current directory")
   .action(function (source) {
     loadBox(source);
   });
@@ -36,7 +36,7 @@ function loadBox(source) {
 
   // load - git clone
   log(chalk.green("Loading '" + source + "' into current directory"));
-  if (source.endsWith("-box") || source.endsWith("-default")) {
+  if (source.endsWith("-box")) {
     shell.exec("git clone https://github.com/dashdev-box/" + source + " .");
   } else {
     shell.exec("git clone https://github.com/dashdev-box/" + source + "-box .");
@@ -51,11 +51,11 @@ function loadBox(source) {
   }
 
   // check for package.json and run npm install
-  var path = './package.json'
-  if (fs.existsSync(path)) {
-    log(chalk.green("Found package.json, executing 'npm install'"));
-    shell.exec("npm install --loglevel=error");
-  }
+  // var path = './package.json'
+  // if (fs.existsSync(path)) {
+  //   log(chalk.green("Found package.json, executing 'npm install'"));
+  //   shell.exec("npm install --loglevel=error");
+  // }
 
   // Run Post-Install routine, configured in dashbox-init.json
   log(chalk.green("Running Post-Install commands from 'dashbox-init.json'"));
