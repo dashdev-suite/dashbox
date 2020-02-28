@@ -23,7 +23,9 @@ $ dashbox init
 ``` 
 That's it! This loads the default minimal boilerplate.
 
-For a custom and more advanced Boilerplate / Example / Tutorial run (in an empty directory):
+### Further Options
+
+For a custom and more advanced Boilerplate / Example / Tutorial run in an empty project directory:
 
 ```
 $ dashbox load <source-box>
@@ -39,7 +41,6 @@ $ dashbox load chrome-extension-wallet-tutorial (WIP)
 
 View all available boxes on https://github.com/dashdev-box
 
-Further Options:
 ```
 Usage: dashbox command [parameter]
 
