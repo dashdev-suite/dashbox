@@ -21,10 +21,11 @@ For a default boilerplate-set of contracts, tests and migrations run the followi
 ```
 $ dashbox init
 ``` 
-For a custom boilerplate/example/tutorial run:
+That's it! This loads the default minimal boilerplate.
+
+For a custom and more advanced Boilerplate / Example / Tutorial run (in an empty directory):
 
 ```
-$ mkdir project && cd project
 $ dashbox load <source-box>
 ```
 eg.
@@ -36,7 +37,7 @@ $ dashbox load chrome-extension-example
 $ dashbox load chrome-extension-wallet-tutorial (WIP)
 ``` 
 
-View all available boxes on https://github.com/dashdev-box/
+View all available boxes on https://github.com/dashdev-box
 
 Further Options:
 ```
@@ -47,7 +48,7 @@ Options:
 
 Commands:
   init|i           Load default Boilerplate-box into current directory
-  load|l <source>  Load defined Boilerplate-box from https://github.com/dashdev-box/ into current directory
+  load|l <source>  Load defined Boilerplate-box from https://github.com/dashdev-box into current directory
 ```
 
 ### Documentation
@@ -55,6 +56,8 @@ Commands:
 No documentation yet. 
 
 Visit https://www.dashdevs.org for updates
+
+Please contact via Discord (https://chat.dashdevs.org) or Github Issue/PullRequest if you want to add a template.
 
 
 ### License
