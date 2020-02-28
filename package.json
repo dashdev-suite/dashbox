@@ -1,6 +1,6 @@
 {
   "name": "dashbox",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "deprecated": false,
   "description": "DashBox - Simple development framework for Dash Platform",
   "homepage": "https://github.com/dashdev-suite/dashbox",
@@ -28,9 +28,7 @@
     "chai": "^4.2.0",
     "dash": "^1.1.2"
   },
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "bin": {
     "dashbox": "bin/cli.js"
   },
