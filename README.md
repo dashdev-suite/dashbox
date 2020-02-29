@@ -61,6 +61,7 @@ dashbox load https://<custom-github-repo>
 Usage: dashbox <command> [parameter]
 
 Options:
+  -v, --version    output version number
   -h, --help       output usage information
 
 Commands:
