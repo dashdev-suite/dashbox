@@ -8,6 +8,10 @@ DashBox - Simple development framework for [Dash](https://www.dash.org) [Platfor
 - Configurable build pipeline and build processes
 - Scriptable deployment and migrations framework
 
+### Required
+
+- Git
+
 ### Install
 
 ```
@@ -37,11 +41,24 @@ $ dashbox load chrome-extension
 $ dashbox load chrome-extension-example
 $ dashbox load chrome-extension-wallet-tutorial (WIP)
 ``` 
-
 View all available boxes on https://github.com/dashdev-box
 
+### Create - Your own box
+
+- Start with an empty directory, [bare-box](https://github.com/dashdev-box/bare-box) or [dashjs-html-js-example-box](https://github.com/dashdev-box/dashjs-html-js-example-box)
+
+- Add everything you need and use [dashbox-init.json](https://github.com/dashdev-box/dashjs-html-js-example-box/blob/master/dashbox-init.json) to add post-installation commands
+
+- Test your box:
+
 ```
-Usage: dashbox command [parameter]
+dashbox load https://<custom-github-repo>
+```
+
+### Documentation
+
+```
+Usage: dashbox <command> [parameter]
 
 Options:
   -h, --help       output usage information
@@ -50,10 +67,6 @@ Commands:
   init|i           Load default Template-box (bare-box) into current directory
   load|l <source>  Load custom Template-box from https://github.com/dashdev-box into current directory
 ```
-
-### Documentation
-
-No documentation yet. 
 
 Visit https://www.dashdevs.org for updates
 

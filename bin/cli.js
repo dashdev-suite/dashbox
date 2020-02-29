@@ -8,7 +8,10 @@ const log = console.log;
 
 commander
   .name("dashbox")
-  .usage("command [parameter]")
+  .usage("<command> [parameter]")
+commander
+  .option('-v, --version', 'output version number')
+  .action(shell.exec("npm show dashbox version"))
 commander
   .command("init")
   .alias("i")
@@ -36,10 +39,16 @@ function loadBox(source) {
 
   // load - git clone
   log(chalk.green("Loading '" + source + "' into current directory"));
-  if (source.endsWith("-box")) {
-    shell.exec("git clone https://github.com/dashdev-box/" + source + " .");
+  if(source.startsWith("https://") || source.startsWith("http://")) {
+    var r = shell.exec("git clone " + source + " .");
+  } else if (source.endsWith("-box")) {
+    var r = shell.exec("git clone https://github.com/dashdev-box/" + source + " .");
   } else {
-    shell.exec("git clone https://github.com/dashdev-box/" + source + "-box .");
+    var r = shell.exec("git clone https://github.com/dashdev-box/" + source + "-box .");
+  }
+  if (r.code!=0) {
+    log(chalk.red("something went wrong - aborting"))
+    return
   }
   log("");
 
